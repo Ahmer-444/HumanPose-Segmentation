@@ -1,0 +1,5 @@
+IN=input-videos/dance.mp4
+OUT=output-videos/pose-dance.mp4
+TF_CUDNN_USE_AUTOTUNE=0 python3 demo/video_demo_multiperson.py -i $IN -o $OUT
+gdrive upload $OUT
+
